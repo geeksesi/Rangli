@@ -17,194 +17,6 @@ body
     color: #E1E1E1;
 }
 
-/* Simple button, with no style */
-a.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"]
-{
-    background-color: transparent;
-    color: #E1E1E1;
-    border: 2px solid #E1E1E1;
-}
-
-/* Simple button's hover */
-a.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover
-{
-    background-color: #E1E1E1;
-    border-color: #E1E1E1;
-    color: #000;
-}
-
-/* Simple button's active */
-a.button:active,
-button:active,
-input[type="submit"]:active,
-input[type="reset"]:active,
-input[type="button"]:active
-{
-    background-color: #b9b9b9;
-    border-color: #b9b9b9;
-}
-
-/* Disabled button */
-a.button:disabled,
-button:disabled,
-input[type="submit"]:disabled,
-input[type="reset"]:disabled,
-input[type="button"]:disabled,
-a.button.disabled,
-button.disabled,
-input[type="submit"].disabled,
-input[type="reset"].disabled,
-input[type="button"].disabled
-{
-    color: #888;
-    border-color: #888;
-    pointer-events: none;
-}
-
-/* Blue button */
-a.button.blue,
-button.blue,
-input[type="submit"].blue,
-input[type="reset"].blue,
-input[type="button"].blue
-{
-    border: 2px #55acee solid;
-    color: #55acee;
-}
-
-/* Blue button's hover */
-a.button.blue:hover,
-button.blue:hover,
-input[type="submit"].blue:hover,
-input[type="reset"].blue:hover,
-input[type="button"].blue:hover
-{
-    background-color: #55acee;
-    border-color: #55acee;
-    color: #fff
-}
-
-/* Blue button's active */
-a.button.blue:active,
-button.blue:active,
-input[type="submit"].blue:active,
-input[type="reset"].blue:active,
-input[type="button"].blue:active
-{
-    background-color: #4b82b7;
-    border-color: #4b82b7;
-
-}
-
-/* Green button */
-a.button.green,
-button.green,
-input[type="submit"].green,
-input[type="reset"].green,
-input[type="button"].green
-{
-    border: 2px #2ecc71 solid;
-    color: #2ecc71;
-}
-
-/* Green button's hover */
-a.button.green:hover,
-button.green:hover,
-input[type="submit"].green:hover,
-input[type="reset"].green:hover,
-input[type="button"].green:hover
-{
-    background-color: #2ecc71;
-    border-color: #2ecc71;
-    color: #fff;
-}
-
-/* Green button's active */
-a.button.green:active,
-button.green:active,
-input[type="submit"].green:active,
-input[type="reset"].green:active,
-input[type="button"].green:active
-{
-    background-color: #21a057;
-    border-color: #21a057;
-}
-
-/* Red button */
-a.button.red,
-button.red,
-input[type="submit"].red,
-input[type="reset"].red,
-input[type="button"].red
-{
-    border: 2px #e74c3c solid;
-    color: #e74c3c;
-}
-
-/* Red button's hover */
-a.button.red:hover,
-button.red:hover,
-input[type="submit"].red:hover,
-input[type="reset"].red:hover,
-input[type="button"].red:hover
-{
-    background-color: #e74c3c;
-    border-color: #e74c3c;
-    color: #fff;
-}
-
-/* Red button's active */
-a.button.red:active,
-button.red:active,
-input[type="submit"].red:active,
-input[type="reset"].red:active,
-input[type="button"].red:active
-{
-    background-color: #bd382a;
-    border-color: #bd382a;
-}
-
-/* Orange button */
-a.button.orange,
-button.orange,
-input[type="submit"].orange,
-input[type="reset"].orange,
-input[type="button"].orange
-{
-    border: 2px #e67e22 solid;
-    color: #e67e22;
-}
-
-/* Orange button's hover */
-a.button.orange:hover,
-button.orange:hover,
-input[type="submit"].orange:hover,
-input[type="reset"].orange:hover,
-input[type="button"].orange:hover
-{
-    background-color: #e67e22;
-    border-color: #e67e22;
-    color: #fff;
-}
-
-/* Orange button's active */
-a.button.orange:active,
-button.orange:active,
-input[type="submit"].orange:active,
-input[type="reset"].orange:active,
-input[type="button"].orange:active
-{
-    background-color: #c16819;
-    border-color: #c16819;
-}
 
 /* Single code, default style */
 code {
@@ -221,6 +33,7 @@ code.filled {
 
 /* pre is used for a block of code */
 pre {
+    padding-left: 15px;
     background-color: transparent;
     color: #E1E1E1;
     border: 2px solid #E1E1E1;
@@ -533,6 +346,196 @@ table.hover > tbody tr:hover {
 
 /* more button
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Simple button, with no style */
+a.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]
+{
+    background-color: transparent;
+    color: #E1E1E1;
+    border: 2px solid #E1E1E1;
+}
+
+/* Simple button's hover */
+a.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover
+{
+    background-color: #E1E1E1;
+    border-color: #E1E1E1;
+    color: #000;
+}
+
+/* Simple button's active */
+a.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active
+{
+    background-color: #b9b9b9;
+    border-color: #b9b9b9;
+}
+
+/* Disabled button */
+a.button:disabled,
+button:disabled,
+input[type="submit"]:disabled,
+input[type="reset"]:disabled,
+input[type="button"]:disabled,
+a.button.disabled,
+button.disabled,
+input[type="submit"].disabled,
+input[type="reset"].disabled,
+input[type="button"].disabled
+{
+    color: #888;
+    border-color: #888;
+    pointer-events: none;
+}
+
+/* Blue button */
+a.button.blue,
+button.blue,
+input[type="submit"].blue,
+input[type="reset"].blue,
+input[type="button"].blue
+{
+    border: 2px #55acee solid;
+    color: #55acee;
+}
+
+/* Blue button's hover */
+a.button.blue:hover,
+button.blue:hover,
+input[type="submit"].blue:hover,
+input[type="reset"].blue:hover,
+input[type="button"].blue:hover
+{
+    background-color: #55acee;
+    border-color: #55acee;
+    color: #fff
+}
+
+/* Blue button's active */
+a.button.blue:active,
+button.blue:active,
+input[type="submit"].blue:active,
+input[type="reset"].blue:active,
+input[type="button"].blue:active
+{
+    background-color: #4b82b7;
+    border-color: #4b82b7;
+
+}
+
+/* Green button */
+a.button.green,
+button.green,
+input[type="submit"].green,
+input[type="reset"].green,
+input[type="button"].green
+{
+    border: 2px #2ecc71 solid;
+    color: #2ecc71;
+}
+
+/* Green button's hover */
+a.button.green:hover,
+button.green:hover,
+input[type="submit"].green:hover,
+input[type="reset"].green:hover,
+input[type="button"].green:hover
+{
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+    color: #fff;
+}
+
+/* Green button's active */
+a.button.green:active,
+button.green:active,
+input[type="submit"].green:active,
+input[type="reset"].green:active,
+input[type="button"].green:active
+{
+    background-color: #21a057;
+    border-color: #21a057;
+}
+
+/* Red button */
+a.button.red,
+button.red,
+input[type="submit"].red,
+input[type="reset"].red,
+input[type="button"].red
+{
+    border: 2px #e74c3c solid;
+    color: #e74c3c;
+}
+
+/* Red button's hover */
+a.button.red:hover,
+button.red:hover,
+input[type="submit"].red:hover,
+input[type="reset"].red:hover,
+input[type="button"].red:hover
+{
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    color: #fff;
+}
+
+/* Red button's active */
+a.button.red:active,
+button.red:active,
+input[type="submit"].red:active,
+input[type="reset"].red:active,
+input[type="button"].red:active
+{
+    background-color: #bd382a;
+    border-color: #bd382a;
+}
+
+/* Orange button */
+a.button.orange,
+button.orange,
+input[type="submit"].orange,
+input[type="reset"].orange,
+input[type="button"].orange
+{
+    border: 2px #e67e22 solid;
+    color: #e67e22;
+}
+
+/* Orange button's hover */
+a.button.orange:hover,
+button.orange:hover,
+input[type="submit"].orange:hover,
+input[type="reset"].orange:hover,
+input[type="button"].orange:hover
+{
+    background-color: #e67e22;
+    border-color: #e67e22;
+    color: #fff;
+}
+
+/* Orange button's active */
+a.button.orange:active,
+button.orange:active,
+input[type="submit"].orange:active,
+input[type="reset"].orange:active,
+input[type="button"].orange:active
+{
+    background-color: #c16819;
+    border-color: #c16819;
+}
+
 
 /* Yellow button */
 a.button.yellow,

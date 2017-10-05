@@ -15,6 +15,11 @@ there. These media queries have been taken from Twitter's Bootstrap for
 compatibility reasons.
 */
 
+.title
+{
+    font-size: 150px;
+}
+
 /* Larger than mobile */
 @media (min-width: 400px) {}
 

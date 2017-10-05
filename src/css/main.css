@@ -68,6 +68,11 @@
 
 @import url("../fonts/font-awesome.css");
 
+/* Ubuntu, OpenSans, Robot font's style import
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Ubuntu');
+
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -81,6 +86,7 @@ html {
 
 /* General attributes of the body tag */
 body {
+    font-family: "Open Sans", sans-serif;
     font-size: 1.6rem;
     height: 100%;
     line-height: 1.6;
@@ -202,9 +208,9 @@ pre {
 
 /* If the code is the immediate child of pre */
 pre > code {
-  display: inline;
-  white-space: pre;
-  border: none;
+    display: inline;
+    white-space: pre;
+    border: none;
 }
 
 /* Footer
