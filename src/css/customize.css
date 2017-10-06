@@ -14,7 +14,71 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there. These media queries have been taken from Twitter's Bootstrap for
 compatibility reasons.
 */
+/*
+ */
 
+#Color
+{
+    position: fixed;
+    left: 0;
+    top: 15%;
+
+}
+
+#Color .color_v
+{
+    /*width: 20px;*/
+    /*height: 10px;*/
+    /*background-color: #bd382a;*/
+    color: #222222;
+    padding: 5px;
+    display: block;
+    max-width: 40px;
+    max-height: 45px;
+    /*display: none;*/
+    left: 0;
+    position: fixed;
+}
+#Color .color_c
+{
+    display: block;
+    /*display: none;*/
+    width: 75px;
+    height: 200px;
+    /*background-color: #33BBF0;*/
+    left: -75px;
+    position: fixed;
+}
+#Color .color_c ul
+{
+    /*margin: 0;*/
+    padding-left: 20px ;
+}
+#Color .color_c li
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+/*
+ */
+
+@keyframes heart-beat {
+    0%   { opacity: 1; }
+    100% { opacity: .5; }
+}
+
+.grid-table div div {
+    text-align: center;
+    border : 1px;
+    border-style: solid;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    color: #000;
+    background-color: #ffffff;
+    margin-bottom: 5px;
+}
 .title
 {
     font-size: 150px;
@@ -35,3 +99,7 @@ compatibility reasons.
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
 
+.meshki-features i
+{
+    font-size: 30px;
+}

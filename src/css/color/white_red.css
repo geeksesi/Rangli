@@ -1,0 +1,809 @@
+/**
+* Rəngli v0.1.0
+* Copyright 2016-2017, MohammadJavadQasemi <javad@geeksesi.xyz>
+* https://github.com/geeksesi/Rangli
+* Licence : none
+* https://geeksesi.xyz
+*/
+
+html
+{
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* Remove highlight color */
+    -webkit-tap-highlight-color: transparent;
+}
+body
+{
+    background-color: #ffffff;
+    color: #e74c3c;
+}
+
+
+/* Single code, default style */
+code {
+    background-color: transparent;
+    color: #222222;
+    border: #e74c3c solid 1px;
+}
+
+p {
+    color: #2F2F2F;
+}
+/* pre is used for a block of code */
+pre {
+    padding-left: 15px;
+    background-color: transparent;
+    color: #222222;
+    border: 2px solid #e74c3c;
+}
+
+/* Filled mode for blocks of code */
+pre.filled {
+    background-color: #efefef;
+    color: #000;
+}
+
+span
+{
+    color: #222222;
+}
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* The footer tag, or a div with footer (Useful for IE) */
+footer, .footer {
+    background-color: #efefef;
+    border-top: 2px solid #e74c3c;
+}
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* General attributes */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #e74c3c;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+/* Dim the form elements when they're disabled */
+input[type="email"]:disabled,
+input[type="number"]:disabled,
+input[type="search"]:disabled,
+input[type="text"]:disabled,
+input[type="tel"]:disabled,
+input[type="url"]:disabled,
+input[type="password"]:disabled,
+textarea:disabled,
+select:disabled {
+    background-color: #efefef;
+    color: #222;
+    border-color: #e74c3c;
+}
+
+/* Firefox outline bug */
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+/* Dropdown arrow for everyone! */
+select {
+    outline: 0 !important;
+    background: url("data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4Ij4KICA8Zz4KICAgIDxwYXRoIGQ9Im0xMjEuMywzNC42Yy0xLjYtMS42LTQuMi0xLjYtNS44LDBsLTUxLDUxLjEtNTEuMS01MS4xYy0xLjYtMS42LTQuMi0xLjYtNS44LDAtMS42LDEuNi0xLjYsNC4yIDAsNS44bDUzLjksNTMuOWMwLjgsMC44IDEuOCwxLjIgMi45LDEuMiAxLDAgMi4xLTAuNCAyLjktMS4ybDUzLjktNTMuOWMxLjctMS42IDEuNy00LjIgMC4xLTUuOHoiIGZpbGw9IiMwMDAwMDAiLz4KICA8L2c+Cjwvc3ZnPgo=") no-repeat;
+    background-color: #e74c3c;
+    background-position: 98% 50%;
+}
+
+/* Blue light animation when the form elements get focus */
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+    background-color: #ffffff;
+    border: 1px solid #000;
+    box-shadow: 0 1px 3px rgba(250, 80, 40, 0.4) inset, 0 0 8px rgba(200, 90, 30, 0.6);
+    outline: 0 !important;
+}
+
+/* Fieldset normalization */
+fieldset {
+    border: 2px solid #e74c3c!important;
+}
+
+/* General attributes for checkboxes and radio buttons */
+input[type="checkbox"] + label.checkbox:before, input[type="radio"] + label.radio:before {
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+}
+/* When the checkbox is checked */
+input[type="checkbox"]:checked + label.checkbox:before {
+    background-color: #e74c3c;
+}
+
+/* When the radio button is checked */
+input[type="radio"]:checked + label.radio:before {
+    background-color: #e74c3c;
+}
+
+
+input[type=range]::-webkit-slider-runnable-track {
+    background: #e74c3c;
+    border: 2px solid #e74c3c;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background-color: #e74c3c;
+    border: 2px solid transparent;
+}
+
+input[type=range]::-moz-range-track {
+    background-color: #ffffff;
+    border: 2px solid #e74c3c;
+}
+
+input[type=range]::-moz-range-thumb {
+    background-color: #e74c3c;
+    border: 5px solid transparent;
+}
+
+
+input[type=range]::-ms-track {
+    background-color: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower,
+input[type=range]::-ms-fill-upper {
+    background-color: #ffffff;
+    border: 2px solid #e74c3c;
+}
+
+input[type=range]::-ms-thumb {
+    background-color: #e74c3c;
+    border: 2px solid transparent;
+}
+
+/* Change placeholder color for text inputs */
+::-webkit-input-placeholder { /* Chrome */
+    color: #000;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #000;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #000;
+    opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+    color: #000;
+    opacity: 1;
+}
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Nice blue for links */
+a {
+    color: rgba(52, 152, 219,1.0);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(52, 152, 219,1.0);
+}
+
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Default <hr> tag */
+hr {
+    border-top: 1px solid #e74c3c;
+}
+/* Text selection color */
+::selection {
+    background: rgba(231, 76, 60,0.3); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    background: rgba(231, 76, 60,0.3); /* Gecko Browsers */
+}
+
+/* Navbar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+nav ul,
+.nav ul {
+    background-color: #efefef;
+    border-bottom: 2px solid #e74c3c;
+}
+
+/* Anchors inside lists' attributes */
+nav ul li > a,
+.nav ul li > a {
+    color: #222;
+}
+/* Active navbar button */
+nav ul li > a.active,
+.nav ul li > a.active {
+    background-color: #efefef;
+}
+
+/* Logo of the website, it must be the first child of navbar*/
+nav ul li:first-child a.logo,
+.nav ul li:first-child a.logo{
+    background-color: #e74c3c;
+    color: #000;
+}
+
+/* Lighten the logo when the mouse is over it */
+nav ul li:first-child a.logo:hover,
+.nav ul li:first-child a.logo:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+/**
+ * Change the link color to #111 (black) on hover
+ * Only direct children are affected, which means it excludes dropdowns
+ */
+nav ul li > a:hover,
+.nav ul li > a:hover {
+    background-color: #ffffff;
+}
+/* Dropdown content attributes */
+.nav-dropdown-content {
+    background-color: #ffffff;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    border: 2px solid #e74c3c;
+    border-top: 0;
+}
+/* Each link in dropdown's content */
+.nav-dropdown-content a {
+    color: #000;
+}
+
+/* When the mouse is on each option */
+.nav-dropdown-content a:hover {
+    background-color: #efefef;
+}
+
+/* When the dropdown is open, change the color of dropdown's button */
+.nav-dropdown:hover .nav-dropdown-button {
+    background-color: #ffffff;
+}
+
+/* Sidenav
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* The side navigation menu */
+.sidenav {
+    background-color: #ffffff;
+}
+.overlay {
+    background-color: black;
+    opacity: 0;
+}
+.sidenav a {
+    color: #e74c3c;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #000;
+}
+
+.sidenav a[disabled]:hover {
+    color: #818181;
+}
+
+/* Special form of <hr> for sidenav */
+.sidenav hr {
+    border-color: #e74c3c;
+}
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Padding and stuff for each cell */
+th,
+td {
+    border-bottom: 1px solid #e74c3c;
+    color: #222222;
+}
+th
+{
+    color: #e74c3c;
+}
+
+/* Stripped table! */
+table.striped tr:nth-child(even) {
+    background-color: rgba(85, 172, 238, 0.2);
+}
+/* Changes color when the mouse is over each row */
+table.hoverable > tbody tr:hover {
+    background-color: rgba(85, 172, 238, 0.3);
+}
+
+/* Vertical line */
+.vertical-line {
+    border-left: 1px solid #B1B1B1;
+}
+
+/* Logo of the website, it must be the first child of navbar*/
+.nav ul li:first-child a.logo i {
+    color: black;
+}
+
+/* Headings
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1,h2,h3,h4,h5,h6
+{
+    color: #c0392b;
+    background-color: transparent;
+}
+h1 > small ,h2 > small ,h3 > small ,h4 > small ,h5 > small ,h6 > small
+{
+    color: #222;
+    background-color: transparent;
+}
+
+span
+{
+    color: #222222;
+}
+
+/* more button
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Simple button, with no style */
+a.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]
+{
+    background-color: transparent;
+    color: #222;
+    border: 2px solid #e74c3c;
+}
+
+/* Simple button's hover */
+a.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover
+{
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    color: #fff;
+}
+
+/* Simple button's active */
+a.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active
+{
+    background-color: #000;
+    border-color: #000;
+}
+
+/* Disabled button */
+a.button:disabled,
+button:disabled,
+input[type="submit"]:disabled,
+input[type="reset"]:disabled,
+input[type="button"]:disabled,
+a.button.disabled,
+button.disabled,
+input[type="submit"].disabled,
+input[type="reset"].disabled,
+input[type="button"].disabled
+{
+    color: #888;
+    border-color: #888;
+    pointer-events: none;
+}
+
+/* Blue button */
+a.button.blue,
+button.blue,
+input[type="submit"].blue,
+input[type="reset"].blue,
+input[type="button"].blue
+{
+    border: 2px #55acee solid;
+    color: #55acee;
+}
+
+/* Blue button's hover */
+a.button.blue:hover,
+button.blue:hover,
+input[type="submit"].blue:hover,
+input[type="reset"].blue:hover,
+input[type="button"].blue:hover
+{
+    background-color: #55acee;
+    border-color: #55acee;
+    color: #fff
+}
+
+/* Blue button's active */
+a.button.blue:active,
+button.blue:active,
+input[type="submit"].blue:active,
+input[type="reset"].blue:active,
+input[type="button"].blue:active
+{
+    background-color: #4b82b7;
+    border-color: #4b82b7;
+
+}
+
+/* Green button */
+a.button.green,
+button.green,
+input[type="submit"].green,
+input[type="reset"].green,
+input[type="button"].green
+{
+    border: 2px #2ecc71 solid;
+    color: #2ecc71;
+}
+
+/* Green button's hover */
+a.button.green:hover,
+button.green:hover,
+input[type="submit"].green:hover,
+input[type="reset"].green:hover,
+input[type="button"].green:hover
+{
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+    color: #fff;
+}
+
+/* Green button's active */
+a.button.green:active,
+button.green:active,
+input[type="submit"].green:active,
+input[type="reset"].green:active,
+input[type="button"].green:active
+{
+    background-color: #21a057;
+    border-color: #21a057;
+}
+
+/* Red button */
+a.button.red,
+button.red,
+input[type="submit"].red,
+input[type="reset"].red,
+input[type="button"].red
+{
+    border: 2px #e74c3c solid;
+    color: #e74c3c;
+}
+
+/* Red button's hover */
+a.button.red:hover,
+button.red:hover,
+input[type="submit"].red:hover,
+input[type="reset"].red:hover,
+input[type="button"].red:hover
+{
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    color: #fff;
+}
+
+/* Red button's active */
+a.button.red:active,
+button.red:active,
+input[type="submit"].red:active,
+input[type="reset"].red:active,
+input[type="button"].red:active
+{
+    background-color: #bd382a;
+    border-color: #bd382a;
+}
+
+/* Orange button */
+a.button.orange,
+button.orange,
+input[type="submit"].orange,
+input[type="reset"].orange,
+input[type="button"].orange
+{
+    border: 2px #e67e22 solid;
+    color: #e67e22;
+}
+
+/* Orange button's hover */
+a.button.orange:hover,
+button.orange:hover,
+input[type="submit"].orange:hover,
+input[type="reset"].orange:hover,
+input[type="button"].orange:hover
+{
+    background-color: #e67e22;
+    border-color: #e67e22;
+    color: #fff;
+}
+
+/* Orange button's active */
+a.button.orange:active,
+button.orange:active,
+input[type="submit"].orange:active,
+input[type="reset"].orange:active,
+input[type="button"].orange:active
+{
+    background-color: #c16819;
+    border-color: #c16819;
+}
+
+
+/* Yellow button */
+a.button.yellow,
+button.yellow,
+input[type="submit"].yellow,
+input[type="reset"].yellow,
+input[type="button"].yellow {
+    border: 2px #f9f300 solid;
+    color: #f9f300;
+}
+
+/* Yellow button's hover */
+a.button.yellow:hover,
+button.yellow:hover,
+input[type="submit"].yellow:hover,
+input[type="reset"].yellow:hover,
+input[type="button"].yellow:hover {
+    background-color: #f9f300;
+    border-color: #f9f300;
+    color: #000;
+}
+
+/* Yellow button's active */
+a.button.yellow:active,
+button.yellow:active,
+input[type="submit"].yellow:active,
+input[type="reset"].yellow:active,
+input[type="button"].yellow:active {
+    background-color: #bfbb1a;
+    border-color: #bfbb1a;
+}
+
+/* Crimson button */
+a.button.crimson,
+button.crimson,
+input[type="submit"].crimson,
+input[type="reset"].crimson,
+input[type="button"].crimson {
+    border: 2px #9a0000 solid;
+    color: #9a0000;
+}
+
+/* Crimson button's hover */
+a.button.crimson:hover,
+button.crimson:hover,
+input[type="submit"].crimson:hover,
+input[type="reset"].crimson:hover,
+input[type="button"].crimson:hover {
+    background-color: #9a0000;
+    border-color: #9a0000;
+    color: #fff;
+}
+
+/* Crimson button's active */
+a.button.crimson:active,
+button.crimson:active,
+input[type="submit"].crimson:active,
+input[type="reset"].crimson:active,
+input[type="button"].crimson:active {
+    background-color: #6f0606;
+    border-color: #6f0606;
+}
+
+/* Purple button */
+a.button.purple,
+button.purple,
+input[type="submit"].purple,
+input[type="reset"].purple,
+input[type="button"].purple {
+    border: 2px #9C27B0 solid;
+    color: #9C27B0;
+}
+
+/* Purple button's hover */
+a.button.purple:hover,
+button.purple:hover,
+input[type="submit"].purple:hover,
+input[type="reset"].purple:hover,
+input[type="button"].purple:hover {
+    background-color: #9C27B0;
+    border-color: #9C27B0;
+    color: #fff;
+}
+
+/* Purple button's active */
+a.button.purple:active,
+button.purple:active,
+input[type="submit"].purple:active,
+input[type="reset"].purple:active,
+input[type="button"].purple:active {
+    background-color: #7B1FA2;
+    border-color: #7B1FA2;
+}
+
+/* Lime button */
+a.button.lime,
+button.lime,
+input[type="submit"].lime,
+input[type="reset"].lime,
+input[type="button"].lime {
+    border: 2px #C0CA33 solid;
+    color: #C0CA33;
+}
+
+/* Lime button's hover */
+a.button.lime:hover,
+button.lime:hover,
+input[type="submit"].lime:hover,
+input[type="reset"].lime:hover,
+input[type="button"].lime:hover {
+    background-color: #C0CA33;
+    border-color: #C0CA33;
+    color: #000;
+}
+
+/* Lime button's active */
+a.button.lime:active,
+button.lime:active,
+input[type="submit"].lime:active,
+input[type="reset"].lime:active,
+input[type="button"].lime:active {
+    background-color: #9E9D24;
+    border-color: #9E9D24;
+}
+
+/* Brown button */
+a.button.brown,
+button.brown,
+input[type="submit"].brown,
+input[type="reset"].brown,
+input[type="button"].brown {
+    border: 2px #8D6E63 solid;
+    color: #8D6E63;
+}
+
+/* Brown button's hover */
+a.button.brown:hover,
+button.brown:hover,
+input[type="submit"].brown:hover,
+input[type="reset"].brown:hover,
+input[type="button"].brown:hover {
+    background-color: #8D6E63;
+    border-color: #8D6E63;
+    color: #fff;
+}
+
+/* Brown button's active */
+a.button.brown:active,
+button.brown:active,
+input[type="submit"].brown:active,
+input[type="reset"].brown:active,
+input[type="button"].brown:active {
+    background-color: #6D4C41;
+    border-color: #6D4C41;
+}
+
+/* Space button */
+a.button.space,
+button.space,
+input[type="submit"].space,
+input[type="reset"].space,
+input[type="button"].space {
+    border: 2px #607D8B solid;
+    color: #607D8B;
+}
+
+/* Space button's hover */
+a.button.space:hover,
+button.space:hover,
+input[type="submit"].space:hover,
+input[type="reset"].space:hover,
+input[type="button"].space:hover {
+    background-color: #607D8B;
+    border-color: #607D8B;
+    color: #fff;
+}
+
+/* Space button's active */
+a.button.space:active,
+button.space:active,
+input[type="submit"].space:active,
+input[type="reset"].space:active,
+input[type="button"].space:active {
+    background-color: #455A64;
+    border-color: #455A64;
+}
+
+/* Rose button */
+a.button.rose,
+button.rose,
+input[type="submit"].rose,
+input[type="reset"].rose,
+input[type="button"].rose {
+    border: 2px #E91E63 solid;
+    color: #E91E63;
+}
+
+/* Rose button's hover */
+a.button.rose:hover,
+button.rose:hover,
+input[type="submit"].rose:hover,
+input[type="reset"].rose:hover,
+input[type="button"].rose:hover {
+    background-color: #E91E63;
+    border-color: #E91E63;
+    color: #fff;
+}
+
+/* Rose button's active */
+a.button.rose:active,
+button.rose:active,
+input[type="submit"].rose:active,
+input[type="reset"].rose:active,
+input[type="button"].rose:active {
+    background-color: #C2185B;
+    border-color: #C2185B;
+}
+
+/* Cyan button */
+a.button.cyan,
+button.cyan,
+input[type="submit"].cyan,
+input[type="reset"].cyan,
+input[type="button"].cyan {
+    border: 2px #00E5FF solid;
+    color: #00E5FF;
+}
+
+/* Cyan button's hover */
+a.button.cyan:hover,
+button.cyan:hover,
+input[type="submit"].cyan:hover,
+input[type="reset"].cyan:hover,
+input[type="button"].cyan:hover {
+    background-color: #00E5FF;
+    border-color: #00E5FF;
+    color: #000;
+}
+
+/* Cyan button's active */
+a.button.cyan:active,
+button.cyan:active,
+input[type="submit"].cyan:active,
+input[type="reset"].cyan:active,
+input[type="button"].cyan:active {
+    background-color: #00B8D4;
+    border-color: #00B8D4;
+}

@@ -210,10 +210,10 @@ hr {
 }
 /* Text selection color */
 ::selection {
-    background: #bd382a; /* WebKit/Blink Browsers */
+    background: rgba(189, 56, 42, 0.3);  /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-    background: #bd382a; /* Gecko Browsers */
+    background: rgba(189, 56, 42, 0.3); /* Gecko Browsers */
 }
 
 /* Navbar

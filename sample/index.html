@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <title>Sample Rəngli Page</title>
     <link rel="stylesheet" href="../src/css/main.css">
-    <!--<link rel="stylesheet" href="../src/css/Dark.css">-->
     <link rel="stylesheet" href="../src/css/customize.css">
     <link rel="stylesheet" href="../src/css/prisma.css">
-    <link rel="stylesheet" href="../src/css/Light.css">
+    <!--<link rel="stylesheet" href="../src/css/color/white_red.css">-->
+    <!--<link rel="stylesheet" href="../src/css/color/Dark.css">-->
+    <!--<link rel="stylesheet" href="../src/css/color/white_blue.css">-->
+    <!--<link rel="stylesheet" href="../src/css/color/Light.css">-->
+    <link id="CssStyle" type="text/css" rel="stylesheet" href="../src/css/color/Light.css">
+
 </head>
 
 <body class="">
@@ -59,7 +63,7 @@
             <li class="nav-right hide-on-tablet">
                 <input type="text" name="searchbox" id="searchbox" placeholder="Search..." onkeydown="">
             </li>
-            <li class="nav-right hide-on-tablet"><button class="green" onclick=""><i class="fa fa-search" aria-hidden="true"></i></button></li>
+            <li class="nav-right hide-on-tablet"><button class="" onclick=""><i class="fa fa-search" aria-hidden="true"></i></button></li>
         </ul>
     </div>
     <br><br><br><br><br>
@@ -68,10 +72,6 @@
             <h1 class="text-center title">Rəngli</h1>
             <h2 class="text-center">Stylish. colorful. Responsive.</h2>
             <h5 class="text-center">Forked form Meshki</h5>
-            <div id="colors" class="text-center">choice your color&nbsp;
-                <button title="Light Dark"><img src="../src/img/light_dark.png" height="20" width="20" title="Light Dark"></button>
-                <button><img src="../src/img/dark_light.png" height="20" width="20" title="Dark Light"></button>
-            </div>
         </div>
 
         <div class="row text-center" style="margin-bottom: 250px;margin-top: 50px;">
@@ -656,12 +656,12 @@
                 The typography base is <a href="https://fonts.google.com/specimen/Open+Sans">Open Sans</a> font, which is served locally, set at 1.5rem (15px) over a 1.6 line height (24px). Other type basics like <a href="javascript:void(0);">anchors</a>, <b>strong</b>, <i>emphasis</i>, and <u>underline</u> are all obviously included.
             </div>
             <div class="six col">
-                <h1>Heading <span class="heading-font-size"><code>&lt;h1></code> 50rem</span></h1>
-                <h2>Heading <span class="heading-font-size"><code>&lt;h2></code> 42rem</span></h2>
-                <h3>Heading <span class="heading-font-size"><code>&lt;h3></code> 36rem</span></h3>
-                <h4>Heading <span class="heading-font-size"><code>&lt;h4></code> 30rem</span></h4>
-                <h5>Heading <span class="heading-font-size"><code>&lt;h5></code> 24rem</span></h5>
-                <h6>Heading <span class="heading-font-size"><code>&lt;h6></code> 15rem</span></h6>
+                <h1>Heading <code>&lt;h1></code><small> 50rem </small></h1>
+                <h2>Heading <code>&lt;h2></code><small> 42rem </small></h2>
+                <h3>Heading <code>&lt;h3></code><small> 36rem </small></h3>
+                <h4>Heading <code>&lt;h4></code><small> 30rem </small></h4>
+                <h5>Heading <code>&lt;h5></code><small> 24rem </small></h5>
+                <h6>Heading <code>&lt;h6></code><small> 15rem </small></h6>
             </div>
         </div>
         <div class="row">
@@ -720,7 +720,7 @@
         </div>
         <div class="row">
             <div class="twelve col">
-                Toggle: <button class="medium" onclick="var tbl=document.getElementById('table-example');tbl.classList.contains('striped')?(tbl.className='expand hoverable', this.innerHTML='Not Striped', this.className='medium'):(tbl.className='expand hoverable striped', this.innerHTML='Striped', this.className='medium blue')">Not Striped</button>
+                Toggle: <button class="medium" onclick="var tbl=document.getElementById('table-example');tbl.classList.contains('striped')?(tbl.className='expand hoverable', this.innerHTML='Not Striped', this.className='medium'):(tbl.className='expand hoverable striped', this.innerHTML='Striped', this.className='medium ')">Not Striped</button>
                 <table class="expand hoverable" id="table-example">
                     <thead>
                     <tr>
@@ -914,7 +914,7 @@
                 rangli v1.5.0 introduced more color options for you to choose. You only have to add the below line to the &lt;head> part of your page.
             <pre>
             <code class="language-html" id="code-extra-button-colors">
-&lt;link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meshki/2.0.1/plugins/meshki-extra-button-colors.min.css">
+                defual usage :)
             </code>
           </pre>
             </p>
@@ -986,6 +986,8 @@
     </div>
 </div>
 
+<div id="Color">
+</div>
 
 <script type="text/javascript" src="../src/js/main.js"></script>
 <script src="../src/js/color_switcher.js"></script>

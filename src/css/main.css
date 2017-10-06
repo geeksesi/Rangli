@@ -923,3 +923,12 @@ p {
   }
 }
 
+/* simple animation for hover and every action  */
+*
+{
+    -o-transition:color .2s ease-in-out, background .3s ease-in;
+    -ms-transition:color .2s ease-in-out, background .3s ease-in;
+    -moz-transition:color .2s ease-in-out, background .3s ease-in;
+    -webkit-transition:color .2s ease-in-out, background .3s ease-in;
+    transition:color .2s ease-in-out, background .3s ease-in;
+}
